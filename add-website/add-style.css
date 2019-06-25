@@ -1,0 +1,79 @@
+html {
+    background-attachment:fixed;
+    height:100%;
+    background-size: auto;
+    background: #ea00ff; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, red, #ea00ff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, red, #ea00ff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, red, #ea00ff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, red, #ea00ff); /* Standard syntax */
+}
+
+p,
+a{
+    font-family: 'Abel', sans-serif;
+}
+body {
+    margin: 0px;
+}
+nav,
+footer{
+    background: rgb(28, 13, 23);
+    text-align: right;
+    padding: 7px 25px;
+    height: 75px;
+    color:white;
+}
+
+nav a {
+    text-align: right;
+    display: inline-table;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    background: none;
+}
+
+nav img {
+    float: left;
+    max-height: 75px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 35px;
+    letter-spacing: 3px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 3em;
+    line-height: 53px;
+    padding: 10px 0;
+}
+
+h2 {
+    color:white;
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    margin-top: 6%;
+    letter-spacing: 1px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 80%;
+    grid-gap: 2em;
+    margin: 45px auto;
+    border: dashed 6px black;
+    background: #0000002e;
+}
+
+@media (min-width:741px){h1 span{display:block}}
+@media (max-width:740px){
+    h1{text-align: center;font-size: 24px;padding-left: 0;} 
+    h2{margin-top: 2%;
+letter-spacing: 1px;
+font-size: 1.5em;}
+}
+section p {color:white;font-family: 'Abel', sans-serif;}
+@media (max-width:400px){h1{font-size:17px;line-height:17px;}h2{font-size: 1em;}}
