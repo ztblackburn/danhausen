@@ -1,4 +1,4 @@
-html {
+body {
     background-attachment:fixed;
     height:100%;
     background-size: auto;
@@ -23,6 +23,9 @@ footer{
     padding: 7px 25px;
     height: 75px;
     color:white;
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 
 nav a {
@@ -60,12 +63,29 @@ h2 {
 
 section {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 25% 1fr 1fr 25%;
     max-width: 80%;
-    grid-gap: 2em;
     margin: 45px auto;
-    border: dashed 6px black;
-    background: #0000002e;
+}
+
+.prime-block {
+    background:black;
+    grid-column: 1/4;
+    grid-row: 1/5;
+}
+
+.second-block {
+    background:#4e4e4e;
+    grid-column: 3/6;
+    grid-row: 2/3;
+    padding: 24px;
+    align-self: center;
+    
+}
+
+.second-block p {
+    color: white;
 }
 
 @media (min-width:741px){h1 span{display:block}}
