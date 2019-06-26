@@ -88,6 +88,11 @@ section {
     color: white;
 }
 
+.social-media img {
+    height: 35px;
+    width: 35px;
+}
+
 @media (min-width:741px){h1 span{display:block}}
 @media (max-width:740px){
     h1{text-align: center;font-size: 24px;padding-left: 0;} 
