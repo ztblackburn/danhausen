@@ -3,10 +3,10 @@ body {
     height:100%;
     background-size: auto;
     background: #ea00ff; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left top, red, #ea00ff); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, red, #ea00ff); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, red, #ea00ff); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, red, #ea00ff); /* Standard syntax */
+    background: -webkit-linear-gradient(left top, #e09393, #ea00ff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #e09393, #ea00ff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #e09393, #ea00ff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #e09393, #ea00ff); /* Standard syntax */
 }
 
 p,
@@ -57,31 +57,35 @@ h2 {
     color:white;
     text-align: center;
     font-family: 'Abel', sans-serif;
-    margin-top: 6%;
+    margin-top: 0;
     letter-spacing: 1px;
 }
 
 section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 25% 1fr 1fr 25%;
-    max-width: 80%;
     margin: 45px auto;
+    position: relative;
+    width: 80%;
+    min-height: 300px;
 }
 
 .prime-block {
-    background:black;
-    grid-column: 1/4;
-    grid-row: 1/5;
+    width: 80%;
+    display: inline-block;
+}
+
+.prime-block img {
+    width: 100%;
 }
 
 .second-block {
     background:#4e4e4e;
-    grid-column: 3/6;
-    grid-row: 2/3;
     padding: 24px;
-    align-self: center;
-    
+    display: inline-block;
+    max-width: 30%;
+    position: absolute;
+    margin-left: -10%;
+    top: 30px;
+    box-shadow: 5px 4px 26px #000000;
 }
 
 .second-block p {
