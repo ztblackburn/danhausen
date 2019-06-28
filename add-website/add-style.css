@@ -16,16 +16,22 @@ a{
 body {
     margin: 0px;
 }
-nav,
-footer{
-    background: rgb(28, 13, 23);
+nav {
+    background: black;
     text-align: right;
     padding: 7px 25px;
     height: 75px;
     color:white;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: space-between;
+}
+
+footer{
+    background: black;
+    text-align: right;
+    padding: 7px 25px;
+    color:white;
 }
 
 nav a {
@@ -68,6 +74,14 @@ section {
     min-height: 300px;
 }
 
+section p {
+    color:white;
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 21px;
+}
+
 .prime-block {
     width: 80%;
     display: inline-block;
@@ -92,17 +106,80 @@ section {
     color: white;
 }
 
+.social-media {
+    color: black;
+}
+
 .social-media img {
     height: 35px;
     width: 35px;
 }
 
-@media (min-width:741px){h1 span{display:block}}
-@media (max-width:740px){
-    h1{text-align: center;font-size: 24px;padding-left: 0;} 
-    h2{margin-top: 2%;
-letter-spacing: 1px;
-font-size: 1.5em;}
+.dribbble {
+    height: 25px;
+    width: 25px;
 }
-section p {color:white;font-family: 'Abel', sans-serif;}
-@media (max-width:400px){h1{font-size:17px;line-height:17px;}h2{font-size: 1em;}}
+
+@media (min-width:741px){
+    h1 span{
+        display: block;
+    }
+}
+@media (max-width:740px) {
+
+    nav {
+        height: 55px;
+    }
+
+    nav img{
+        max-height: 55px;
+    }
+
+    h1 {
+        background: black;
+        font-size: 24px;
+        line-height: 35px;
+        margin:  0 25px;
+        border-radius: 0 0 13px 13px;
+    }
+
+    h2{ 
+        margin-top: 2%;
+        letter-spacing: 1px;
+        font-size: 1.5em;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    section p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .prime-block {
+        width: 100%;
+        display: block;
+    }
+
+    .second-block {
+        display: block;
+        max-width: 100%;
+        margin: 0;
+        position: relative;
+        box-shadow: none;
+        top: 0;
+    }
+}
+
+@media (max-width:400px) {
+    h1 {
+        font-size:17px;
+        line-height:17px;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+}
