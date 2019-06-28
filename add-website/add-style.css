@@ -10,7 +10,7 @@ body {
 }
 
 p,
-a{
+a {
     font-family: 'Abel', sans-serif;
 }
 body {
@@ -27,20 +27,14 @@ nav {
     justify-content: space-between;
 }
 
-footer{
-    background: black;
-    text-align: right;
-    padding: 7px 25px;
-    color:white;
-}
-
 nav a {
     text-align: right;
     display: inline-table;
-    color: white;
+    color: #efefef;
     text-decoration: none;
     margin: 5px;
     background: none;
+    letter-spacing: 1px;
 }
 
 nav img {
@@ -48,15 +42,24 @@ nav img {
     max-height: 75px;
 }
 
+footer{
+    background: black;
+    text-align: right;
+    padding: 7px 25px;
+}
+
 h1 {
+    background: black;
+    margin: 0 auto;
+    border-radius: 0 0 13px 13px;
+    max-width: 617px;
+    padding: 0 35px 25px;
     text-align: center;
-    margin-top: 35px;
     letter-spacing: 3px;
     font-family: 'Oswald', sans-serif;
-    color: white;
+    color: #efefef;
     font-size: 3em;
     line-height: 53px;
-    padding: 10px 0;
 }
 
 h2 {
@@ -89,6 +92,7 @@ section p {
 
 .prime-block img {
     width: 100%;
+    display: block;
 }
 
 .second-block {
@@ -115,9 +119,10 @@ section p {
     width: 35px;
 }
 
-.dribbble {
+.social-media .dribbble {
     height: 25px;
     width: 25px;
+    padding-bottom: 5px;
 }
 
 @media (min-width:741px){
@@ -125,6 +130,18 @@ section p {
         display: block;
     }
 }
+
+@media (max-width: 1415px) {
+
+    section {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1285px) {
+
+}
+
 @media (max-width:740px) {
 
     nav {
@@ -136,11 +153,9 @@ section p {
     }
 
     h1 {
-        background: black;
         font-size: 24px;
         line-height: 35px;
         margin:  0 25px;
-        border-radius: 0 0 13px 13px;
     }
 
     h2{ 
