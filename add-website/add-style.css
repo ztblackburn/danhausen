@@ -2,11 +2,11 @@ body {
     background-attachment:fixed;
     height:100%;
     background-size: auto;
-    background: #ea00ff; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left top, #e09393, #ea00ff); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, #e09393, #ea00ff); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, #e09393, #ea00ff); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, #e09393, #ea00ff); /* Standard syntax */
+    /*background: #ea00ff;  For browsers that do not support gradients */
+    /*background: -webkit-linear-gradient(left top, #e09393, #ea00ff); For Safari 5.1 to 6.0 */
+    /*background: -o-linear-gradient(bottom right, #e09393, #ea00ff);  For Opera 11.1 to 12.0 */
+    /*background: -moz-linear-gradient(bottom right, #e09393, #ea00ff);  For Firefox 3.6 to 15 */
+    /*background: linear-gradient(to bottom right, #e09393, #ea00ff);  Standard syntax */
 }
 
 p,
@@ -51,7 +51,6 @@ footer{
 h1 {
     background: black;
     margin: 0 auto;
-    border-radius: 0 0 13px 13px;
     max-width: 617px;
     padding: 0 35px 25px;
     text-align: center;
@@ -62,7 +61,15 @@ h1 {
     line-height: 53px;
 }
 
-h2 {
+h1 + h2 {
+    text-align: center;
+    font-size: 31px;
+    margin: 200px auto;
+    color:black;
+    width: 392px;
+}
+
+section h2 {
     color:white;
     text-align: center;
     font-family: 'Abel', sans-serif;
@@ -93,10 +100,11 @@ section p {
 .prime-block img {
     width: 100%;
     display: block;
+    border: solid 1px black;
 }
 
 .second-block {
-    background:#4e4e4e;
+    background: #3f3f3f;
     padding: 24px;
     display: inline-block;
     max-width: 30%;
@@ -171,6 +179,10 @@ section p {
     section p {
         font-size: 14px;
         line-height: 18px;
+    }
+
+    .wrapper {
+        margin: 0 20px;
     }
 
     .prime-block {
