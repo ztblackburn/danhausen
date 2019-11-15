@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akron Design & Development</title>
+    <link href="https://fonts.googleapis.com/css?family=Kanit:800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Oswald" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add-style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="root">
+        <nav>
+            <img class="logo" src="logo-add.svg">
+            <div>
+                <a href="#ap-stickers">Adventure Pack</a>
+                <a href="#pp-stickers">Pride and Prejudice stickers</a>
+                <a href="#at-calculator">Adventure Tip Calculator</a>
+                <a href="mailto:mail@akrondandd.com">Contact</a>
+            </div>
+        </nav>
+        <h1>Akron Design & Development</h1>
+        <div>
+            <h2>Let's just have some fun and make some stuff.</h2>
+        </div>
+        <div class="wrapper">
+            <section id="ap-stickers">
+                    <div class="prime-block">
+                <img src="website-ap.png" alt="adventure-pack image">
+            </div>
+            <div class="second-block">
+                    <h2>Adventure Pack</h2>
+                <p>We love playing Dungeon and Dragons, Pathfinder and other tabletop RPG's with our friends. So we have been making Sword and Sorcery iMessenger stickers for our friends and for you and your friends to use.</p>
+                <p>So if you love playing some good old fashion tabletop pen and paper d&d you need these stickers.</p>
+                <a href="https://apps.apple.com/us/app/adventure-pack/id1195401103" target="blank"><img src="Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"></a>
+            </div>
+            </section>
+            <section id="pp-stickers">
+                <div class="prime-block">
+                    <img src="pp-web-image.png">
+                </div>
+                <div class="second-block">
+                        <h2>Pride and Prejudice stickers</h2>
+                    <p>Celebrate Jane Austen's classic Pride and Prejudice with your friends by using the Pride and Prejudice Sticker Pack.</p>
+                    <p>Transport yourself to an age of civility with the whole crew, Lizzie, Jane, Mr. Bingley, Mr. & Mrs. Bennet, and yes, even Mr. Darcy.</p>
+                    <a href="https://apps.apple.com/us/app/pride-and-prejudice-stickers/id1454197848?ls=1" target="blank"><img src="Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"></a></div>
+            </section>
+            <section id="at-calculator">
+                <div class="prime-block">
+                    <img src="web-a-tip.png" alt="">
+                </div>
+                <div class="second-block">
+                        <h2>Adventure Tip Calculator</h2>
+                    <p>We love playing Dungeon and Dragons and other RPG games with our friends. But, we also love going out for dinner with our friends. So we took all the fun of playing games and made a Tip Calculator​ that reflects those good times.</p>
+                    <a href="https://apps.apple.com/us/app/adventure-tip-calculator/id1451261230?ls=1" target="blank">
+                        <img src="Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg">
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script>
+            if('serviceWorker' in navigator) {
+              navigator.serviceWorker
+                       .register('/sw.js')
+                       .then(function() { console.log("Service Worker Registered"); });
+            }
+            </script>
+</body>
+<footer>
+    <a href="https://www.instagram.com/akrondesignanddevelopment/" class="social-media" target="blank">
+        <img src="IG_Glyph_Fill.png" alt="instagram logo">
+    </a>
+    <a href="https://dribbble.com/ztblackburn" class="social-media" target="blank">
+        <img src="dribbble-ball-icon.png" alt="link to Dribbble"  class="dribbble">
+    </a>
+</footer>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-89362142-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<script src="app.js"></script>
+</html>
