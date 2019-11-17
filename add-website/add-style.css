@@ -49,16 +49,16 @@ footer{
 }
 
 h1 {
-    background: black;
-    margin: 0 auto;
+    margin: 50px auto 0;
     max-width: 617px;
     padding: 0 35px 25px;
     text-align: center;
     letter-spacing: 3px;
     font-family: 'Oswald', sans-serif;
-    color: #efefef;
+    color: black;
     font-size: 3em;
     line-height: 53px;
+    border-bottom: solid 3px;
 }
 
 h1 + h2 {
@@ -146,8 +146,20 @@ section p {
     }
 }
 
-@media (max-width: 1285px) {
+@media (max-width: 1000px) {
+    .second-block {
+        display: block;
+        max-width: 100%;
+        margin: 0;
+        position: relative;
+        box-shadow: none;
+        top: 0;
+    }
 
+    .prime-block {
+        width: 100%;
+        display: block;
+    }
 }
 
 @media (max-width:740px) {
@@ -183,20 +195,6 @@ section p {
 
     .wrapper {
         margin: 0 20px;
-    }
-
-    .prime-block {
-        width: 100%;
-        display: block;
-    }
-
-    .second-block {
-        display: block;
-        max-width: 100%;
-        margin: 0;
-        position: relative;
-        box-shadow: none;
-        top: 0;
     }
 }
 
