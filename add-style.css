@@ -119,6 +119,7 @@ section p {
     margin-left: -10%;
     top: 30px;
     box-shadow: 5px 4px 26px #000000;
+    border: solid 1px black;
 }
 
 .second-block p {
@@ -161,6 +162,7 @@ section p {
         position: relative;
         box-shadow: none;
         top: 0;
+        border: none;
     }
 
     .prime-block {
@@ -193,8 +195,8 @@ section p {
     
     h1 + h2 {
         text-align: center;
-        font-size: 20px;
-        margin: 70px auto;
+        font-size: 18px;
+        margin: 70px 20ox;
         color:black;
         width: 392px;
     }
