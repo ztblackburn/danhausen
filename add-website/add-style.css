@@ -194,9 +194,9 @@ section p {
     h1 + h2 {
         text-align: center;
         font-size: 18px;
-        margin: 70px 20px;
+        margin: 70px auto;
         color:black;
-        width: 392px;
+        width: 85%;
     }
 
     section {
