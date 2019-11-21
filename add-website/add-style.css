@@ -35,6 +35,7 @@ nav a {
     margin: 5px;
     background: none;
     letter-spacing: 1px;
+    font-size: 16px;
 }
 
 nav img {
@@ -168,6 +169,10 @@ section p {
 
     nav {
         height: 55px;
+    }
+    
+    nav a {
+        font-size: 13px;
     }
 
     nav img{
