@@ -163,6 +163,11 @@ section p {
         width: 100%;
         display: block;
     }
+    
+    .prime-block img {
+        border: none;
+    }
+
 }
 
 @media (max-width:740px) {
