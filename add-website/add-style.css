@@ -148,7 +148,7 @@ section p {
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1277px) {
     .second-block {
         display: block;
         max-width: 100%;
