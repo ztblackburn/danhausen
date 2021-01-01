@@ -1,5 +1,6 @@
 <html>
     <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="preconnect" href="https://fonts.gstatic.com">
             <link href="https://fonts.googleapis.com/css2?family=Geo&family=Orbitron:wght@500&display=swap" rel="stylesheet">
             <link rel="preconnect" href="https://fonts.gstatic.com"> 
@@ -17,16 +18,17 @@
                     <div class="byline">Very Good <span>&#8208;</span> Very Evil</div>  
                 <nav>
                     <a href="https://www.prowrestlingtees.com/danhausen" target="_blank"><img src="coin.png" class="coin" alt="coin image">Prowrestling Tees</a>
-                    <a href="https://www.patreon.com/LoveThatDanhausen" target="_blank><img src="coin.png" class="coin" alt="coin image">Patreon</a>
-                    <a href="https://www.cameo.com/danhausen?qid=1609476205" target="_blank><img src="coin.png" class="coin"alt="coin image">Cameo</a>
-                    <a href="https://www.paypal.com/paypalme/Danhausen666" target="_blank><img src="coin.png" class="coin" alt="coin image">Paypal</a>
-                    <a href="https://www.rohwrestling.com/shop/danhausen-ring-hausen-t-shirt" target="_blank><img src="coin.png" class="coin">RING OF HAUSEN</a>
+                    <a href="https://www.patreon.com/LoveThatDanhausen" target="_blank"><img src="coin.png" class="coin" alt="coin image">Patreon</a>
+                    <a href="https://www.cameo.com/danhausen?qid=1609476205" target="_blank"><img src="coin.png" class="coin"alt="coin image">Cameo</a>
+                    <a href="https://www.paypal.com/paypalme/Danhausen666" target="_blank"><img src="coin.png" class="coin" alt="coin image">Paypal</a>
+                    <a href="https://www.rohwrestling.com/shop/danhausen-ring-hausen-t-shirt" target="_blank"><img src="coin.png" class="coin">RING OF HAUSEN</a>
                 </nav>
         
                 <img src="https://pbs.twimg.com/profile_banners/34549320/1568898564/1500x500" alt"" />
     
                 <div class="half">
                     <h2>Goodnighthausen Guest List</h2>
+                    <div  class="underline"></div>
                     <ul>
                         <li><a href="https://twitter.com/MATTHARDYBRAND" class="link" target="_blank" >Matt Hardy</a></li>
                         <li><a href="https://twitter.com/AustinCreedWins" class="link" target="_blank">Austin Cree</a></li>
@@ -35,6 +37,7 @@
                 </div>
                 <div class="half">
                     <h2>Hausen</br>Extras</h2>
+                    <div  class="underline"></div>
                     <ul>
                         <li><a href="https://www.instagram.com/skywomancreations/" class="link" target="_blank">Sky Woman Creations</a></li>
                         <li><a href="https://www.edgemenprinting.com"class="link" target="_blank" >Edgemen Printing</a></li>
@@ -44,7 +47,11 @@
                 <footer>
                     <hr>
                     <div class="p-tb"> 
-                        <a href="https://twitter.com/DanhausenAD" target="_blank><span class="heart" style='font-size:16px;'>&#9825;</span><span class="skull" style='font-size:22px;'>&#9760;</span>Twitter</a>
+
+                        <a href="https://twitter.com/DanhausenAD" target="_blank">
+                            <span class="heart" style='font-size:16px;'>&#9825;</span>
+                            <span class="skull" style='font-size:22px;'>&#9760;</span>Twitter</a>
+
                         <a href="https://www.instagram.com/danhausenad/" target="_blank"><span class="heart" style='font-size:16px;'>&#9825;</span><span class="skull" style='font-size:22px;'>&#9760;</span>Instagram</a>
                         <a href="https://www.youtube.com/channel/UCoR3FbVR8K2j9uyfichWAEA/videos" target="_blank"><span  class="heart" style='font-size:16px;'>&#9825;</span><span class="skull" style='font-size:22px;'>&#9760;</span>YouTube</a>
                     </div>
@@ -172,9 +179,26 @@ footer a:hover .skull, a:focus .skull  {
     display: inline-block;
     vertical-align: top;
 }
-@media only screen and (max-width: 600px) {
-.wrapper{margin: 2% 10%}
-h1 {font-size: 35px; margin-bottom: 0px;}
+
+.underline {
+    height: 1px;
+    background: lime;
+    width: 20%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+@media only screen and (max-width: 768px) {
+    .outer-wrapper {
+        padding: 12px;
+    width: 88%;
+    background: black;
+    margin: 5% auto 0;}
+
+.wrapper{margin: 0;
+    border: dashed 5px purple;
+}
+h1 {font-size: 30px; margin-bottom: 0px; margin-top: 0px;}
 h2 {font-size: 25px;}
 a {font-size: 15px;}
 footer a {
@@ -186,6 +210,10 @@ footer a {
     .half {
         width: 100%;
     }
+    .byline {
+        font-size: 15px;
+    }
+    nav {    padding: 0px 0px;}
 }
 </style>
 
