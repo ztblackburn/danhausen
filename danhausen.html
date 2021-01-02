@@ -48,7 +48,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="wood">
                 <div class="half">
+                        <div class="card">
                     <h2>Goodnighthausen</br>Guest List</h2>
                     <div  class="underline"></div>
                     <ul>
@@ -56,8 +58,10 @@
                         <li><a href="https://twitter.com/AustinCreedWins" class="link" target="_blank">Austin Cree</a></li>
                         <li><a href="https://twitter.com/lancehoyt" class="link" target="_blank">Lance Archer</a></li>
                     </ul>
+                    </div>
                 </div>
                 <div class="half">
+                    <div class="card">
                     <h2>Hausen</br>Extras</h2>
                     <div  class="underline"></div>
                     <ul>
@@ -66,14 +70,23 @@
                         <li><a href="https://teamcoco.com" class="link" target="_blank">Team Coco</a></li>
                     </ul>
                 </div>
+            </div>
+            </div>
+            <div>
+                <h3>A special message from Danhausen just for you!</h3>
+                    <audio controls>
+                            <source src="test.m4a" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                         
+             
+            </div>
                 <footer>
                     <hr>
                     <div class="p-tb"> 
-
                         <a href="https://twitter.com/DanhausenAD" target="_blank">
                             <span class="heart" style='font-size:16px;'>&#9825;</span>
                             <span class="skull" style='font-size:22px;'>&#9760;</span>Twitter</a>
-
                         <a href="https://www.instagram.com/danhausenad/" target="_blank"><span class="heart" style='font-size:16px;'>&#9825;</span><span class="skull" style='font-size:22px;'>&#9760;</span>Instagram</a>
                         <a href="https://www.youtube.com/channel/UCoR3FbVR8K2j9uyfichWAEA/videos" target="_blank"><span  class="heart" style='font-size:16px;'>&#9825;</span><span class="skull" style='font-size:22px;'>&#9760;</span>YouTube</a>
                     </div>
@@ -158,6 +171,12 @@ body {
     background-repeat: repeat;
     widows: 100%;
 }
+
+.wood {
+    background-image: url("wood.png");
+    background-repeat: repeat;
+}
+
 img {
     width: 100%;
     }
@@ -198,9 +217,10 @@ footer a:hover .skull, a:focus .skull  {
 }
 
 .half {
-    width: 49%;
+    width: 46%;
     display: inline-block;
     vertical-align: top;
+    padding: 9% 1%;
 }
 
 .two-three {
@@ -222,7 +242,14 @@ footer a:hover .skull, a:focus .skull  {
     margin: 0 auto;
     padding: 0;
 }
+.card {
 
+   border-radius: 40px;
+   background: black;
+   margin: 0 auto;
+   width:80%; 
+   padding: 20px;
+}
 .profile-photo{    height: 200px;
     width: 200px;
     border-radius: 100px;}
@@ -237,26 +264,60 @@ footer a:hover .skull, a:focus .skull  {
         margin-top: 0px;
     }
 
-    .about p{    padding: 0px 40px 0px 25px;}
-    @media only screen and (max-width: 1206px) {
-        .two-three {
-    display: block;
-    width:100%;
-}
-.one-three {
-    display: block;
-    width:100%;
+    .button  
+    {
+        padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
 }
 
-.profile-photo{
-    margin: 0 auto;
-    display: block;
-}
+.button:hover {background-color: #3e8e41}
 
-.about p {
-    padding: 0px;
-}
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
     }
+
+    .about p{    padding: 0px 40px 0px 25px;}
+@media only screen and (max-width: 1206px) {
+        .two-three {
+        display: block;
+        width:100%;
+    }
+    .one-three {
+        display: block;
+        width:100%;
+    }
+
+    .profile-photo{
+        margin: 0 auto;
+        display: block;
+    }
+
+    .about p {
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+    .half {
+        width: 100%;
+        padding: 9% 0%;
+    }
+    .half:first-of-type {
+        padding: 9% 0% 0%;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .outer-wrapper {
         padding: 12px;
@@ -278,9 +339,7 @@ footer a {
     display: block;
     margin: 15px  0;
     }
-    .half {
-        width: 100%;
-    }
+
     .byline {
         font-size: 15px;
     }
@@ -311,4 +370,9 @@ function signoversoul() {
   alert("Danhausen is good, Danhausen is great....... upon this date....");
 }
 </script>
+
+<script>
+
+
+      </script>
 </html>
