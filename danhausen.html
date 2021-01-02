@@ -12,6 +12,11 @@
     </head>
     <body>
         <head></head>
+        <div class="banner">
+            <div class="blimp-wraper">
+                <img src="blimp.gif" class="blimp" alt="blimp">
+            </div>
+        </div>
         <div class="outer-wrapper">
             <div class="wrapper">   
                     <h1><span>DANHAUSEN</span></h1>
@@ -97,6 +102,40 @@
         </div>
     </body>
 <style>
+@-webkit-keyframes move
+{
+    from {
+        left: -20%;
+    }
+    to {
+        left: 110%;
+    }
+}
+@keyframes move
+{
+    from {
+        left: -20%;
+    }
+    to {
+        left: 110%;
+    }
+}
+.blimp-wraper {
+    height: 42px;
+    width: auto;
+    padding-right: 20px;
+    left: -184%;
+    position: absolute;
+    -webkit-animation: move 40s;
+    animation: move 40s;
+    top: 6%;}
+
+
+.blimp {
+    height: 42px;
+    width: auto;
+    }
+
     .coin {width:15px;padding-bottom: 3px; padding-right: 5px;
     vertical-align: middle;}
 body {
