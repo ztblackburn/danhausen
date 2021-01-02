@@ -6,11 +6,9 @@
             <link rel="preconnect" href="https://fonts.gstatic.com"> 
             <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
-<title>Danhausen</title>
-<link rel="icon" 
-      type="image/png" 
-      href="favicon.png">
+            <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+            <title>Danhausen</title>
+            <link rel="icon"type="image/png" href="favicon.png">
     </head>
     <body>
         <head></head>
@@ -29,7 +27,27 @@
                 </nav>
         
                 <img src="https://pbs.twimg.com/profile_banners/34549320/1568898564/1500x500" alt"" />
-    
+                <div class="about">
+                    <h2>All About Danhausen</h2>
+                    <div>
+                        <div class="two-three">
+                            <p>placeholder text...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <ul>
+                                <li>Both very nice AND very evil.</li>
+                                <li>From somewhere far way.</li>
+                                <li>Very Strong.</li>
+                                <li>Extremely Powerfull.</li>
+                                <li>weights at least 300 pounts</li>
+                                <li>Can chokeslam TWO people at once.</li>
+                            </ul>
+                        </div>
+                        <div class="one-three">
+                            <div>
+                                <img src="profilephoto.png" class="profile-photo" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="half">
                     <h2>Goodnighthausen</br>Guest List</h2>
                     <div  class="underline"></div>
@@ -185,6 +203,17 @@ footer a:hover .skull, a:focus .skull  {
     vertical-align: top;
 }
 
+.two-three {
+    display: inline-block;
+    width:74%;
+    vertical-align: top;
+}
+.one-three {
+    display: inline-block;
+    width:24%;
+    vertical-align: top;
+}
+
 .underline {
     height: 3px;
     background: lime;
@@ -193,6 +222,23 @@ footer a:hover .skull, a:focus .skull  {
     margin: 0 auto;
     padding: 0;
 }
+
+.profile-photo{    height: 200px;
+    width: 200px;
+    border-radius: 100px;}
+
+    .about {
+    background: purple;
+    padding: 40px;
+
+    }
+
+    .about h2 {
+        margin-top: 0px;
+    }
+
+    .about p{    padding: 0px 40px 0px 25px;}
+
 @media only screen and (max-width: 768px) {
     .outer-wrapper {
         padding: 12px;
@@ -229,6 +275,25 @@ footer a {
     .p-tb {
 padding: 5px;
 }
+
+.two-three {
+    display: block;
+    width:100%;
+}
+.one-three {
+    display: block;
+    width:100%;
+}
+
+.profile-photo{
+    margin: 0 auto;
+    display: block;
+}
+
+.about p {
+    padding: 0px;
+}
+
 }
 @media only screen and (max-width: 450px) {
     h2 {font-size: 22px;}
