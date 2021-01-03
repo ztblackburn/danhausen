@@ -77,17 +77,20 @@
                 </div>
             </div>
             </div>
-            <div style="background: aqua;">
-                <div class="balloon">
-                <h3>A special message from Danhausen just for you!</h3>
-                
-
-                
-                    <audio controls>
-                            <source src="test.m4a" type="audio/mpeg">
-                          Your browser does not support the audio element.
-                          </audio>
-                      </div>    <img src="moneydog copy.png" alt="" class="moneydog">
+            <div style="background: hotpink;">
+                <div class="balloon-wrapper">
+                        <div class="balloon">
+                                <h3>A special message from Danhausen just for you!</h3>
+                                <audio controls>
+                                        <source src="test.m4a" type="audio/mpeg">
+                                      Your browser does not support the audio element.
+                                      </audio>
+                                  </div>
+                </div>
+               
+                      <div class="moneydog-wrapper">
+                            <img src="moneydog copy.png" alt="" class="moneydog">
+                      </div>
             </div>
             </div>
                 <footer>
@@ -106,15 +109,19 @@
         </div>
     </body>
 <style>
+    .balloon-wrapper {display: inline-block;vertical-align: top; width: 49%;}
+    .moneydog-wrapper {display: inline-block;vertical-align: top; width: 50%;}
     .balloon{background: white; vertical-align: top;
-border-radius: 68px;
-color: black;
-text-align: center;
-padding: 33px;
-width: 300px;
-border: solid 9px black;
-display: inline-block;}
-    .moneydog{width: 500px;display: inline-block;vertical-align: top}
+        border-radius: 100px;
+        color: black;
+        text-align: center;
+        padding: 33px;
+        width: 300px;
+        border: solid 4px black;
+        float: right;
+        margin: 30px 0 0 0;
+}
+    .moneydog{width: 500px; float: right;}
     .demon {width:20px; margin: 0 12px;}
 @-webkit-keyframes move
 {
@@ -406,9 +413,17 @@ footer a {
 padding: 5px;
 }
 
-
-
+.balloon-wrapper {display: block; width: 100%;}
+    .moneydog-wrapper {display: block; width: 100%;}
+    .moneydog {
+    width: 200px;
+    float: none;
+    padding: 0px;
+    margin: 0px;
 }
+}
+
+.moneydog{width: 500px; float: right;}
 @media only screen and (max-width: 450px) {
     h2 {font-size: 22px;}
     .outer-wrapper {
