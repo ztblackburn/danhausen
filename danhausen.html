@@ -109,20 +109,7 @@
         </div>
     </body>
 <style>
-    .balloon-wrapper {display: inline-block;vertical-align: top; width: 49%;}
-    .moneydog-wrapper {display: inline-block;vertical-align: top; width: 50%;}
-    .balloon{background: white; vertical-align: top;
-        border-radius: 100px;
-        color: black;
-        text-align: center;
-        padding: 33px;
-        width: 300px;
-        border: solid 4px black;
-        float: right;
-        margin: 30px 0 0 0;
-}
-    .moneydog{width: 500px; float: right;}
-    .demon {width:20px; margin: 0 12px;}
+
 @-webkit-keyframes move
 {
     from {
@@ -348,6 +335,21 @@ footer a:hover .skull, a:focus .skull  {
     }
 
     .about p{    padding: 0px 40px 0px 25px;}
+.balloon-wrapper {display: inline-block;vertical-align: top; width: 49%;}
+.moneydog-wrapper {display: inline-block;vertical-align: top; width: 50%;}
+.balloon{background: white; vertical-align: top;
+    border-radius: 100px;
+    color: black;
+    text-align: center;
+    padding: 33px;
+    width: 300px;
+    border: solid 4px black;
+    float: right;
+    margin: 30px 0 0 0;
+}
+.moneydog{width: 500px; float: right;}
+.demon {width:20px; margin: 0 12px;}
+
 @media only screen and (max-width: 1206px) {
         .two-three {
         display: block;
@@ -381,49 +383,56 @@ footer a:hover .skull, a:focus .skull  {
 @media only screen and (max-width: 768px) {
     .outer-wrapper {
         padding: 12px;
-    width: 88%;
-    background: black;
-    margin: 5% auto 0;}
-
-.wrapper{margin: 0;
-    padding: 12px;
-    border: dashed 5px purple;
-}
-h1 {font-size: 38px; margin-bottom: 0px; margin-top: 0px;}
-h2 {font-size: 25px;}
-a {font-size: 22px;
-line-height: 28px;;}
-footer a {
-    font-size: 15px;
-    width: 100%;
-    display: block;
-    margin: 15px  0;
+        width: 88%;
+        background: black;
+        margin: 5% auto 0;
     }
 
+    .wrapper{margin: 0;
+        padding: 12px;
+        border: dashed 5px purple;
+    }
+    h1 {font-size: 38px; margin-bottom: 0px; margin-top: 0px;}
+    h2 {font-size: 25px;}
+    a {font-size: 22px;line-height: 28px;}
+    footer a {
+        font-size: 15px;
+        width: 100%;
+        display: block;
+        margin: 15px  0;
+        }
     .byline {
         font-size: 15px;
     }
     nav {padding: 29px 0px 10px;}
-
     ul {
         padding: 11px 20px 35px 20px;
     }
+    .p-tb {padding: 5px;}
 
-    .p-tb {
-padding: 5px;
-}
-
-.balloon-wrapper {display: block; width: 100%;}
-    .moneydog-wrapper {display: block; width: 100%;}
+    .balloon-wrapper {display: block; width: 100%;}
+    .moneydog-wrapper {display: block; width: 100%; padding:3px 0 0;}
     .moneydog {
-    width: 200px;
-    float: none;
-    padding: 0px;
-    margin: 0px;
-}
+        width: 200px;
+        float: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .balloon {
+        float: none;
+        padding: 16px 30px;
+        width:75%;
+        margin: 30px auto 30px;
+    }
+    :host(audio){
+        width:200px;
+        background: cyan;
+    }
+
+    .about {padding:30px 20px;}
 }
 
-.moneydog{width: 500px; float: right;}
 @media only screen and (max-width: 450px) {
     h2 {font-size: 22px;}
     .outer-wrapper {
