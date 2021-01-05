@@ -96,7 +96,11 @@
                             <img src="moneydog copy.png" alt="" class="moneydog">
                       </div>
             </div>
+            <div class="media-wrapper">
+                    <a href="DanhausenColoring.pdf" class="button" target="_blank" dowload>Danhausen Coloring Page</a>
+                </div>
             </div>
+        
                 <footer>
                     <hr>
                     <div class="p-tb"> 
@@ -114,6 +118,33 @@
         
     </body>
 <style>
+.media-wrapper {
+    padding: 25px;
+    background: wheat
+}
+.button{
+    display: block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #bfbfbf;
+    border: none;
+    box-shadow: 0 9px #585858;
+    border: solid 7px #9a9a9a;
+    text-shadow: -1px 1px #1b1b1b;
+}
+.button:focus {color: black;}
+.button:active {/*OnClick*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*Move down*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*Reduce Shadow*/
+    border-bottom: none;
+}   
 .gradient {
     background: rgb(255,105,180);
 background: linear-gradient(66deg, rgba(255,105,180,1) 39%, rgba(255,105,180,1) 44%, rgba(41,255,251,1) 89%);
@@ -319,29 +350,6 @@ footer a:hover .skull, a:focus .skull  {
 
     .about h2 {
         margin-top: 0px;
-    }
-
-    .button  
-    {
-        padding: 15px 25px;
-        font-size: 24px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        outline: none;
-        color: #fff;
-        background-color: #4CAF50;
-        border: none;
-        border-radius: 15px;
-        box-shadow: 0 9px #999;
-}
-
-.button:hover {background-color: #3e8e41}
-
-.button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
     }
 
     .about p{    padding: 0px 40px 0px 25px;}
