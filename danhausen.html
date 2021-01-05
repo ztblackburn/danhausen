@@ -120,7 +120,12 @@
 <style>
 .media-wrapper {
     padding: 25px;
-    background: wheat
+    background: wheat;
+    background-image: url("grey-text.png");
+    background-repeat: repeat;
+    widows: 100%;
+    background-size: 133px;
+    background-position: center;
 }
 .button{
     display: block;
@@ -130,12 +135,14 @@
     text-align: center;
     text-decoration: none;
     outline: none;
-    color: #fff;
+    color: #4e4e4e;
     background-color: #bfbfbf;
     border: none;
-    box-shadow: 0 9px #585858;
+    /* box-shadow: 0 9px #585858; */
     border: solid 7px #9a9a9a;
-    text-shadow: -1px 1px #1b1b1b;
+    /* text-shadow: -1px 1px #1b1b1b; */
+    border-top: solid 5px white;
+    border-bottom: solid 5px #585858;
 }
 .button:focus {color: black;}
 .button:active {/*OnClick*/
