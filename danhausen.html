@@ -9,6 +9,8 @@
             <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
             <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Denk+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
             <title>Danhausen</title>
             <link rel="icon"type="image/png" href="favicon.png">
     </head>
@@ -83,13 +85,13 @@
                     
                 <div class="balloon-wrapper">
                         <div class="balloon">
-                                <h3>A special message from Danhausen just for you!</h3>
-                                <audio controls>
-                                        <source src="test.mp3" >
-                                        <source src="test.m4a" type="audio/mpeg">
-                                      Your browser does not support the audio element.
-                                      </audio>
-                                  </div>
+                            <h3>A special message from Danhausen just for you!</h3>
+                            <audio controls>
+                                <source src="test.mp3" >
+                                <source src="test.m4a" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
                 </div>
                
                       <div class="moneydog-wrapper">
@@ -110,14 +112,40 @@
                         <a href="https://www.instagram.com/danhausenad/" target="_blank"><span class="heart" style='font-size:16px;'>&#9825;</span><span class="skull" style='font-size:22px;'>&#9760;</span>Instagram</a>
                         <a href="https://www.youtube.com/channel/UCoR3FbVR8K2j9uyfichWAEA/videos" target="_blank"><span  class="heart" style='font-size:16px;'>&#9825;</span><span class="skull" style='font-size:22px;'>&#9760;</span>YouTube</a>
                     </div>
-                    <p>Send Gifts and Money to: ... Address ...</p>
+                    <p>Send Danhausen fanhausen mail and treasures or be cursed:
+                            <address>
+                            PO Box 8034
+                            Eastpointe, MI
+                        </address>
+                            48021</p>
                         <button onclick="signoversoul()">Danhausen is good, Danhausen is great</button>
+                        <div class="number-visitors" >Number of Visitors: <span>6</span><span>6</span><span id="finalNumber">5</span></div>
+                            <div class="popup-dogs"></div>
+                            <div class="popup-chest"></div>
                     </footer>
             </div>
         </div>
         
     </body>
 <style>
+
+    .number-visitors {
+        width: 254px;
+    margin: 25px auto 0;
+    padding: 9px 0;
+    background-color: #525252;
+    }
+
+    .number-visitors span{
+        font-family: 'Orbitron', sans-serif;
+    color: red;
+    background-color: black;
+    padding: 5px;
+    border: solid black1px;
+    border-radius: 3px;
+    margin: 2px;
+    }
+
 .media-wrapper {
     padding: 25px;
     background: wheat;
@@ -203,7 +231,7 @@ body {
 }
 
 .outer-wrapper {
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
     width: 85%;
     background: black;
     margin: 10% auto 0;}
@@ -277,7 +305,7 @@ img {
     }
 footer {
     text-align: center;
-    padding: 25px 0
+    padding: 25px 0 0;
 }
 
 footer a {
@@ -552,10 +580,21 @@ border-left-color: white;
 function signoversoul() {
   alert("Danhausen is good, Danhausen is great....... upon this date....");
 }
+(function () {
+    var dt = new Date();
+    var currentHour = dt.getHours();
+      
+      if(currentHour > 19){
+    document.getElementById("finalNumber").innerHTML = "6";
+};
+
+
+}());
+
+function myFunction() {
+   
+}
+
 </script>
 
-<script>
-
-
-      </script>
 </html>
