@@ -102,6 +102,7 @@
             </div>
             <div class="media-wrapper">
                     <a href="DanhausenColoring.pdf" class="button" target="_blank" dowload>Danhausen Coloring Page</a>
+                    <a href="docs/DanhausenPhotos.zip" class="button" target="_blank" dowload>Media Photos</a>
                 </div>
             </div>
         
@@ -165,6 +166,9 @@
     }
 
 .media-wrapper {
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
     padding: 25px;
     background: wheat;
     background-image: url("grey-text.png");
@@ -173,6 +177,10 @@
     background-size: 133px;
     background-position: center;
 }
+
+.media-wrapper a { flex-grow: 1; width: 19%;
+    margin: 10px;}
+
 .button{
     display: block;
     padding: 15px 25px;
@@ -503,6 +511,17 @@ li {}
         width: 34%;
         margin: 13px 0 0 0;
     }
+
+    .media-wrapper {
+    display: block;
+}
+
+.media-wrapper a { width: auto;
+    margin: 10px;}
+
+    .wrapper{ padding: 18px;
+    border: dashed 10px purple;
+    margin: 0px;}
 }
 
 @media only screen and (max-width: 800px) {
