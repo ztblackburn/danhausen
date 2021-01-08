@@ -114,17 +114,24 @@
                         <a href="https://www.instagram.com/danhausenad/" target="_blank"><span class="heart" style='font-size:16px;'>&#9825;</span><span class="skull" style='font-size:22px;'>&#9760;</span>Instagram</a>
                         <a href="https://www.youtube.com/channel/UCoR3FbVR8K2j9uyfichWAEA/videos" target="_blank"><span  class="heart" style='font-size:16px;'>&#9825;</span><span class="skull" style='font-size:22px;'>&#9760;</span>YouTube</a>
                     </div>
+                    <div class="address-wrapper">
+                            <div class="dog-left"><img src="images/blackdog-copy.gif" alt="black dog"></div>
+                           <div>
                     <p>Send Danhausen fanhausen mail and treasures or be cursed:
                             <address>
                             PO Box 8034
                             Eastpointe, MI
                         </address>
                             48021</p>
+                        </div> 
+                            <div class="dog-left"><img src="images/white-dog.gif" alt="white dog"></div>
+                        </div>
                         <button onclick="signoversoul()">Danhausen is good, Danhausen is great</button>
+                       
                         <div class="number-visitors" >Number of Visitors: <span>6</span><span>6</span><span id="finalNumber">5</span></div>
                             <div class="popup-dogs"></div>
                             <div class="popup-chest"></div>
-                            <div class="dog-left"><img src="images/blackdog.png" alt="black dog"></div>
+                            
                     </footer>
             </div>
             
@@ -132,8 +139,13 @@
         
     </body>
 <style>
+    .address-wrapper div{
+        display: inline-block;
+        vertical-align: middle;
+    }
 .dog-left {
     width: 60px;
+    margin: 0 5%;
 }
     .number-visitors {
         width: 254px;
@@ -491,6 +503,17 @@ li {}
         width: 34%;
         margin: 13px 0 0 0;
     }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .address-wrapper div {
+        margin: 0 auto;
+    display: block;
+}
+.address-wrapper div:last-of-type{
+    margin-bottom:20px;
+}
 }
 
 @media only screen and (max-width: 768px) {
