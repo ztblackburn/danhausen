@@ -52,7 +52,8 @@
                         </div>
                         <div class="one-three">
                             <div>
-                                <img src="images/IMG_7116.JPG" class="profile-photo" alt="profile photo">
+                                <img src="images/profile-small.jpg" class="profile-photo" alt="profile photo">
+                                <img src="loading-gif" class="profile-photo loading-image" alt="profile photo">
                             </div>
                         </div>
                     </div>
@@ -399,19 +400,34 @@ footer a:hover .skull, a:focus .skull  {
    width:80%; 
    padding: 20px;
 }
-.profile-photo{    height: 200px;
+.profile-photo {
+    height: 200px;
     width: 200px;
-    border-radius: 100px;}
+    border-radius: 100px;
+}
 
-    .about {
+.profile-photo.loading-image {
+    margin-top: -200px;
+}
+.one-three > div{
+
+color: mediumpurple;
+ border-radius: 116px;
+ border: double 16px;
+ height: 200px;
+ width: 200px;
+ text-align: center;
+ margin: 0 auto; 
+}
+
+.about {
     background: purple;
     padding: 40px;
+}
 
-    }
-
-    .about h2 {
-        margin-top: 0px;
-    }
+.about h2 {
+    margin-top: 0px;
+}
 
     .about p{    padding: 0px 40px 0px 25px;}
 .balloon-wrapper {display: inline-block;vertical-align: top; width: 49%;}
@@ -543,6 +559,22 @@ li {}
     width: 150px;
     border-radius: 75px;
 }
+
+.profile-photo.loading-image {
+    margin-top: -150px;
+}
+
+.one-three > div{
+
+   color: mediumpurple;
+    border-radius: 90px;
+    border: double 16px;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    margin: 0 auto; 
+}
+
     .blimp-wraper {top: 2%; height:35px;}
 .balloon-wrapper {width:48%;}
     .outer-wrapper {
