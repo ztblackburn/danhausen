@@ -887,7 +887,7 @@ function getDocHeight() {
 }
 
 $(window).scroll(function() {
-    if($(window).scrollTop() + window.innerHeight == $(document).height()) {
+    if($(window).scrollTop() + window.innerHeight > $(document).height() -50 ) {
     footer.addClass('open');
    }
    else if ( footer.hasClass('open'))
