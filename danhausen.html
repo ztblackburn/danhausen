@@ -870,12 +870,32 @@ $(window).scroll(function() {
 
    if( scrolledLength  == documentHeight ) {
     //alert("bottom! 1");
-       footer.addClass('open');
+       //footer.addClass('open');
    }
    else if ( scrolledLength <= documentHeight && footer.hasClass('open') ) {
-        footer.removeClass('open');
+        //footer.removeClass('open');
    }
 })
+
+function getDocHeight() {
+    var D = document;
+    return Math.max(
+        D.body.scrollHeight, D.documentElement.scrollHeight,
+        D.body.offsetHeight, D.documentElement.offsetHeight,
+        D.body.clientHeight, D.documentElement.clientHeight
+    );
+}
+
+$(window).scroll(function() {
+    if($(window).scrollTop() + window.innerHeight == $(document).height()) {
+    footer.addClass('open');
+   }
+   else if ( footer.hasClass('open'))
+   {
+    footer.removeClass('open');
+   }
+});
+
 
 </script>
 
