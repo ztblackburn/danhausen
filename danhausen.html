@@ -33,10 +33,13 @@
         <div class="outer-wrapper">
             <div class="wrapper"> 
                 <div class="social-wrapper">
+                    
                     <a href="https://twitter.com/DanhausenAD" target="_blank">
-                        <span class="heart" style='font-size:16px;'>&#9825;</span>
-                        <span class="skull" style='font-size:22px;'>&#9760;</span>Twitter</a>
-                    <a href="https://www.instagram.com/danhausenad/" target="_blank"><span class="heart" style='font-size:16px;'>&#9825;</span><span class="skull" style='font-size:22px;'>&#9760;</span>Instagram</a>
+                        <img class="heart" src="images/Twitter_Social_Icon_Square_White.png"/>
+                        <span class="skull" style='font-size: 25px;line-height: 25px;'>&#9760;</span></a>
+                    <a href="https://www.instagram.com/danhausenad/" target="_blank">
+                        <img class="heart" src="images/ig-logo.svg" />
+                        <span class="skull" style='font-size: 25px;line-height: 25px;'>&#9760;</span></a>
                 </div>
                     <h1><span>DANHAUSEN</span></h1>
                     
@@ -172,23 +175,25 @@
         filter: grayscale(100%);
         background: #000 !important;
     }
-.obey{background-color: #eaeaea;background-image:none !important ;}
-.obey .byline {color:white;}
-.obey  .blimp-wraper {display: none;}
+    .obey{background-color: #eaeaea;background-image:none !important ;}
+    .obey .byline {color:white;}
+    .obey .blimp-wraper {display: none;}
     .social-wrapper {
-        align-content: space-between;
-        justify-content: center;
-       display: flex; 
-       text-align: center;
+       text-align: right;
+    }
+    .social-wrapper a {
+       padding:  0 10px;
+       text-decoration: none;
+       color:gold;
+       width: 25px;
+        height: 25px;
+    }
+    .social-wrapper a img {
+       width: 25px;
     }
     .obey .wrapper{border: dashed 15px white;}
     .obey .underline{background: black;}
-    .social-wrapper a{
-        flex-grow: 1; width: 19%;
-        font-size: 14px;
-        color: white;
-        font-family: 'Geo', sans-serif;
-    }
+
 .block {display: block;}
 .container{
   position:relative;
