@@ -31,11 +31,13 @@
             </div>
         </div> 
         <div class="outer-wrapper">
-            <div class="wrapper">  
-                    <!--<a href="https://twitter.com/DanhausenAD" target="_blank">
+            <div class="wrapper"> 
+                <div class="social-wrapper">
+                    <a href="https://twitter.com/DanhausenAD" target="_blank">
                         <span class="heart" style='font-size:16px;'>&#9825;</span>
                         <span class="skull" style='font-size:22px;'>&#9760;</span>Twitter</a>
-                    <a href="https://www.instagram.com/danhausenad/" target="_blank"><span class="heart" style='font-size:16px;'>&#9825;</span><span class="skull" style='font-size:22px;'>&#9760;</span>Instagram</a> -->
+                    <a href="https://www.instagram.com/danhausenad/" target="_blank"><span class="heart" style='font-size:16px;'>&#9825;</span><span class="skull" style='font-size:22px;'>&#9760;</span>Instagram</a>
+                </div>
                     <h1><span>DANHAUSEN</span></h1>
                     
                     <div class="byline"><img src="demongif.gif" alt="demongif" class="demon" >Very Nice <span>&#8208;</span> Very Evil<img src="demongif.gif" alt="demongif" class="demon" ></div>  
@@ -137,7 +139,7 @@
                         <span class="heart" style='font-size:16px;'>&#9825;</span>
                         <span class="skull" style='font-size:22px;'>&#9760;</span>Twitter</a>
                     <a href="https://www.instagram.com/danhausenad/" target="_blank"><span class="heart" style='font-size:16px;'>&#9825;</span><span class="skull" style='font-size:22px;'>&#9760;</span>Instagram</a>
-                    <a href="https://www.youtube.com/channel/UCoR3FbVR8K2j9uyfichWAEA/videos" target="_blank"><span  class="heart" style='font-size:16px;'>&#9825;</span><span class="skull" style='font-size:22px;'>&#9760;</span>YouTube</a>
+                   <!-- <a href="https://www.youtube.com/channel/UCoR3FbVR8K2j9uyfichWAEA/videos" target="_blank"><span  class="heart" style='font-size:16px;'>&#9825;</span><span class="skull" style='font-size:22px;'>&#9760;</span>YouTube</a>-->
                 </div>
                 <div class="address-wrapper">
                     <div class="dog-left"><img src="images/blackdog-copy.gif" alt="black dog"></div>
@@ -158,12 +160,35 @@
                         <div class="popup-chest"></div>
             </footer>
         </div>
-        <img src="images/Alien-blue.png" class="footer" alt="blue alien"/>
+        <img src="images/Alien-blue.png" class="footer" id="alien" alt="blue alien"/>
     </div>
     <audio src="docs/loading-short.mp3" type="audio/mp3" autoplay></audio>
 
     </body>
 <style>
+    .obey h1, .obey h2 {color:white;}
+    .obey .outer-wrapper{
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        background: #000 !important;
+    }
+.obey{background-color: #eaeaea;background-image:none !important ;}
+.obey .byline {color:white;}
+.obey  .blimp-wraper {display: none;}
+    .social-wrapper {
+        align-content: space-between;
+        justify-content: center;
+       display: flex; 
+       text-align: center;
+    }
+    .obey .wrapper{border: dashed 15px white;}
+    .obey .underline{background: black;}
+    .social-wrapper a{
+        flex-grow: 1; width: 19%;
+        font-size: 14px;
+        color: white;
+        font-family: 'Geo', sans-serif;
+    }
 .block {display: block;}
 .container{
   position:relative;
@@ -330,8 +355,9 @@ background: linear-gradient(66deg, rgba(255,105,180,1) 39%, rgba(255,105,180,1) 
     position: absolute;
     -webkit-animation: move 40s;
     animation: move 40s;
-    top: 6%;}
-
+    top: 6%;
+    z-index: 10;
+}
 
 .blimp {
     height: 42px;
@@ -344,6 +370,9 @@ body {
     background-color: black;
     color: white
     }
+
+    .obey .wrapper{border:dashed 15px white;}
+
 .wrapper {
     padding: 20px;
     border: dashed 15px purple;
@@ -440,18 +469,18 @@ footer a span {
     margin-right: 5px;
 }
 
-footer a .heart{display: inline;}
-footer a .skull{display: none;}
+ a .heart{display: inline;}
+ a .skull{display: none;}
 
 footer a:hover, a:focus   {
     color: gold;
 }
 
-footer a:hover .heart,  a:focus  .heart{
+ a:hover .heart,  a:focus  .heart{
     display: none;
 }
 
-footer a:hover .skull, a:focus .skull  {
+ a:hover .skull, a:focus .skull  {
     display: inline-block;
 }
 
@@ -551,7 +580,7 @@ color: mediumpurple;
 	margin-top: -35px;
 	margin-right: -35px;
 }
-.moneydog{}
+
 .demon {width:20px; margin: 0 12px;}
 
 ul{    list-style-image: url('tooth.png');
@@ -561,7 +590,7 @@ margin-block-end: 1em;
 margin-inline-start: 0px;
 margin-inline-end: 0px;
 padding-inline-start: 40px;}
-li {}
+
 
 @media only screen and (max-width: 1260px) {
     .balloon {
@@ -629,6 +658,8 @@ li {}
     .media-button-wrapper a { width: auto;
     margin: 20px 10px;}
 
+    .obey .wrapper{border:dashed 10px white;}
+
     .wrapper{ padding: 18px;
     border: dashed 10px purple;
     margin: 0px;}
@@ -690,7 +721,7 @@ li {}
         background: black;
         margin: 5% auto 5%;
     }
-
+    .obey .wrapper{border:dashed 5px white;}
     .wrapper{
         margin: 0;
         padding: 12px 9px;
@@ -715,7 +746,30 @@ li {}
     }
     .p-tb {padding: 5px;}
 
-    .balloon-wrapper {padding-top: 7px;}
+
+    .blimp-wraper {
+        padding-top: 7px;
+        left: -37%;
+        }
+
+        @-webkit-keyframes move
+{
+    from {
+        left: -37%;
+    }
+    to {
+        left: 100%;
+    }
+}
+@keyframes move
+{
+    from {
+        left: -37%;
+    }
+    to {
+        left: 100%;
+    }
+}
     .moneydog-wrapper {padding:3px 0 0; text-align: right;}
     .moneydog {
         width: 102%;
@@ -869,11 +923,8 @@ $(window).scroll(function() {
 
 
    if( scrolledLength  == documentHeight ) {
-    //alert("bottom! 1");
-       //footer.addClass('open');
    }
    else if ( scrolledLength <= documentHeight && footer.hasClass('open') ) {
-        //footer.removeClass('open');
    }
 })
 
@@ -895,7 +946,18 @@ $(window).scroll(function() {
     footer.removeClass('open');
    }
 });
+$("#alien").click(function() {
+    if($("body").hasClass("obey")){
+        window.scrollTo(0, 0);
+        $("body").removeClass("obey");
+    }
+    else {
+        window.scrollTo(0, 0);
+        $("body").addClass("obey");
+    }
 
+
+});
 
 </script>
 
