@@ -9,7 +9,7 @@
             gtag('config', 'G-DQPDT897YF');
         </script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Geo&family=Orbitron:wght@500&display=swap" rel="stylesheet">
@@ -23,13 +23,16 @@
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
         <title>Danhausen</title>
         <link rel="icon"type="image/png" href="favicon.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     </head>
     <body>
-        <div class="banner">
-            <div class="blimp-wraper">
-                <img src="blimp.gif" class="blimp" alt="blimp">
-            </div>
-        </div> 
+        <div class="banner-wrapper">
+            <div class="banner">
+                <div class="blimp-wraper">
+                    <img src="blimp.gif" class="blimp" alt="blimp">
+                </div>
+            </div> 
+        </div>
         <div class="outer-wrapper">
             <div class="wrapper"> 
                 <div class="social-wrapper">
@@ -201,7 +204,9 @@
     .obey .byline {color:black; font-family: sans-serif;}
     .obey .blimp-wraper {display: none;}
     .social-wrapper {
-       text-align: right;
+        justify-content: space-between;
+    display: flex;
+    margin-bottom: -45px;
     }
     .social-wrapper a {
        padding:  0 10px;
@@ -374,15 +379,16 @@ background: linear-gradient(66deg, rgba(255,105,180,1) 39%, rgba(255,105,180,1) 
         left: 110%;
     }
 }
-.banner {overflow: hidden;position: relative;height: 42px;}
+
+.banner {overflow: hidden;position: relative;height: 49px;}
 .blimp-wraper {
     height: 42px;
     width: auto;
     padding-right: 20px;
     left: -20%;
     position: absolute;
-    -webkit-animation: move 40s;
-    animation: move 10s;
+    -webkit-animation: move 35s;
+    animation: move 35s;
     top: 6%;
     z-index: 10;
 }
@@ -410,7 +416,7 @@ body {
     padding: 20px 20px 0px 20px;
     width: 85%;
     background: black;
-    margin: 10% auto 0;}
+    margin: 2% auto 0;}
 
 nav  {
     color: white;
@@ -436,7 +442,7 @@ nav a:hover, a:focus {
 
 h1{
     color: lime;
-    font-size: 70px;
+    font-size: 75px;
     text-align: center;
     font-family: 'Bungee Outline', cursive;
     margin-top: 15px;
@@ -687,6 +693,8 @@ padding-inline-start: 40px;}
     .wrapper{ padding: 18px;
     border: dashed 10px purple;
     margin: 0px;}
+
+    .social-wrapper {margin-bottom: -15px;}
 }
 
 @media only screen and (max-width: 800px) {
@@ -743,7 +751,7 @@ padding-inline-start: 40px;}
         padding: 12px 9px;
         width: 88%;
         background: black;
-        margin: 5% auto 5%;
+        margin: -6% auto 5%;
     }
     .obey .wrapper{border:dashed 5px white;}
     .wrapper{
@@ -832,7 +840,8 @@ padding-inline-start: 40px;}
     }
 
     body {
-        background-size: 20px
+        background-size: 25px;
+        margin:0px;
     }
     .card {
        border-radius: 20px; 
