@@ -881,6 +881,43 @@ padding-inline-start: 40px;}
     h2 {font-size: 22px;}
     .outer-wrapper {
     width: 91%;}
+
+    .blimp-wraper {
+    padding-top: 7px;
+    left: -51%;
+}
+@-webkit-keyframes move
+{
+    from {
+        left: -51%;
+    }
+    to {
+        left: 100%;
+    }
+}
+@keyframes move
+{
+    from {
+        left: -51%;
+    }
+    to {
+        left: 100%;
+    }
+}
+.social-wrapper a {
+    padding: 0;}
+
+.social-wrapper a img {
+    width: 20px;
+}
+.social-wrapper a{
+    width: 20px;
+    height: 20px;
+}
+.wrapper {
+    border: dashed 4px purple;
+}
+.balloon {margin: 4px auto -19px;}
 }
 </style>
 
@@ -950,8 +987,6 @@ function myFunction() {
 
 var footer = $('.footer'),
     extra = 798;
-
-// footer.css({ opacity: '0', display: 'block' });
 
 
 $(window).scroll(function() {
