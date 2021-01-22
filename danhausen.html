@@ -29,7 +29,7 @@
         </div>
         <div class="outer-wrapper">
             <div class="wrapper"> 
-                <div class="social-wrapper">
+                <div class="social-wrapper-desktop">
                     <a href="https://twitter.com/DanhausenAD" target="_blank">
                         <img class="heart" src="images/Twitter_Social_Icon_Square_White.png"/>
                         <span class="skull" style='font-size: 25px;line-height: 25px;'>&#9760;</span></a>
@@ -46,6 +46,14 @@
                     <a href="https://www.cameo.com/danhausen?qid=1609476205" target="_blank"><img src="coin-phone.gif" class="coin"alt="coin image">Cameo</a>
                     <a href="https://www.hottopic.com/product/pro-wrestling-danhausen-t-shirt/14594122.html" target="_blank"><img src="coin-phone.gif" class="coin" alt="coin image">Hot Topic</a>
                     <a href="https://www.rohwrestling.com/wrestlers/danhausen" target="_blank"><img src="coin-phone.gif" class="coin">Ring of Honor</a>
+                    <div class="social-wrapper-mobile">
+                            <a href="https://twitter.com/DanhausenAD" target="_blank">
+                                <img class="heart" src="images/Twitter_Social_Icon_Square_White.png"/>
+                                <span class="skull" style='font-size: 25px;line-height: 25px;'>&#9760;</span></a>
+                            <a href="https://www.instagram.com/danhausenad/" target="_blank">
+                                <img class="heart" src="images/ig-logo.svg" />
+                                <span class="skull" style='font-size: 25px;line-height: 25px;'>&#9760;</span></a>
+                        </div>
                 </nav>
                 <img src="images/banner-image.jpg" alt="Photo of Danhausen laying on the ground" />
                 <div class="about">
@@ -161,6 +169,25 @@
     <audio src="docs/loading-short.mp3" type="audio/mp3" autoplay></audio>
 </body>
 <style>
+
+.social-wrapper-mobile {display: none;}
+    
+.social-wrapper-desktop {
+        justify-content: space-between;
+        display: flex;
+        margin-bottom: -45px;
+    }
+    .social-wrapper-desktop a, .social-wrapper-mobile a {
+        padding:  0 10px;
+        text-decoration: none;
+        color:gold;
+        width: 25px;
+        height: 25px;
+    }
+    .social-wrapper-desktop a img, .social-wrapper-mobile a img{
+       width: 25px;
+    }
+
     nav a:hover, a:focus {
         color: gold;
     }
@@ -238,22 +265,7 @@
 
     footer .lovethat {display: none;}
     .lovethat {display: none;}
-    
-    .social-wrapper {
-        justify-content: space-between;
-        display: flex;
-        margin-bottom: -45px;
-    }
-    .social-wrapper a {
-        padding:  0 10px;
-        text-decoration: none;
-        color:gold;
-        width: 25px;
-        height: 25px;
-    }
-    .social-wrapper a img {
-       width: 25px;
-    }
+
     .block {display: block;}
     .container{
         position:relative;
@@ -679,7 +691,7 @@
     border: dashed 10px purple;
     margin: 0px;}
 
-    .social-wrapper {margin-bottom: -15px;}
+    .social-wrapper-desktop {margin-bottom: -15px;}
 }
 
 @media only screen and (max-width: 800px) {
@@ -694,6 +706,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .social-wrapper-desktop {display: none;}
+    .social-wrapper-mobile {display: block; text-align: center;margin-top: 25px;}
+    .social-wrapper-mobile a {padding:  0 20px;}
     .video-wrapper h3{
         font-size: 17px;
     }
@@ -851,10 +866,7 @@
     .media-wrapper {
         padding: 12px 2px;
     }
-    .social-wrapper a:first-of-type{
-    float: left;
 
-    }
 
 }
 
@@ -889,13 +901,13 @@
         left: 100%;
     }
 }
-.social-wrapper a {
+.social-wrapper-mobile a {
     padding: 0;}
 
-.social-wrapper a img {
+.social-wrapper-mobile a img {
     width: 20px;
 }
-.social-wrapper a{
+.social-wrapper-mobile a{
     width: 20px;
     height: 20px;
 }
