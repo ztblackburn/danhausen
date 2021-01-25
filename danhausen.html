@@ -79,7 +79,8 @@
                     </div>
                 </div>
                 <div class="media-wrapper">
-                    <h2 class="lovethat">Watch YouTube</h2>
+                    <h2 class="lovethat">Watch</h2>
+                    <a  class="lovethat center" href="https://www.youtube.com/channel/UCoR3FbVR8K2j9uyfichWAEA/videos">All YouTube Videos</a>
                     <div class="video-wrapper">
                         <div class="video-wrapper-inner">
                             <h3><img class="video-clap" src="clap-tooth.png">Media Playerhausen</h3>
@@ -88,6 +89,8 @@
                             <div class="fitVids-wrapper">
                                 <iframe width="560" height="315" src="https://www.youtube.com//embed/videoseries?list=PLV2eET_7UJFk6FkaFZQLAV9qnw8mJ_2pJ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             </div>
+                            <h2 class="lovethat">Join</h2>
+                            <a class="lovethat center" href="https://www.patreon.com/LoveThatDanhausen">Patreon</a>
                             <p>Join the <a href="https://www.patreon.com/LoveThatDanhausen">Patreon</a> for only <bold>$3</bold> to get the most current Videos!</p>
                         </div>
                     </div>
@@ -136,6 +139,9 @@
                     </div>
                 </div>
                 <div class="gradient">
+                    <!--<div class="fillhausen">
+                        <img src="gradient-fillhausen.png" class="fillhausen" alt="Danhausen with Flowers">
+                    </div>-->
                     <div class="balloon-wrapper">
                         <div class="balloon">
                             <h3>A special message from Danhausen just for you!</h3>
@@ -156,7 +162,8 @@
                 <div class="address-wrapper">
                     <div class="dog-left"><img src="images/blackdog-copy.gif" alt="black dog"></div>
                         <div>
-                            <p>Send Danhausen fanhausen mail and treasures or be cursed:
+                            <h2 class="lovethat">Send</h2>
+                            <p><span class="sent-text">Send Danhausen fanhausen mail and treasures or be cursed:</span>
                                 <address>
                                 PO Box 8034
                                 Eastpointe, MI
@@ -184,6 +191,9 @@
     <audio src="docs/loading-short.mp3" type="audio/mp3" autoplay></audio>
 </body>
 <style>
+    .center {
+        text-align: center;
+    }
     .moneydog {max-width: 500px; float: right;}
 .twitter {border-radius: 15px;}
 .wood ul 
@@ -204,24 +214,24 @@
 
 
 /* width */
-::-webkit-scrollbar {
+ul::-webkit-scrollbar {
   width: 10px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+ul::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey; 
   border-radius: 5px;
 }
  
 /* Handle */
-::-webkit-scrollbar-thumb {
+ul::-webkit-scrollbar-thumb {
   background: lime; 
   border-radius: 5px;
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+ul::-webkit-scrollbar-thumb:hover {
   background: lime; 
 }
 
@@ -499,9 +509,17 @@
     }
 
     .coin {width:15px;padding-bottom: 3px; padding-right: 5px;vertical-align: middle;}
-.obey .obey-bookings {
+.obey .obey-bookings, .obey .sent-text {
 
 display: none;
+}
+
+.obey footer{
+    padding: 0
+}
+
+.obey .video-wrapper-inner a{
+    font-size: 15px;
 }
 
 .obey .media-wrapper{
@@ -523,7 +541,8 @@ display: none;
     display: none;
 }
 
-.obey .heart, .obey .skull, .obey .number-visitors, .obey .dog-left, .obey .gradient, .obey .coin {
+.obey .heart, .obey .skull, .obey .number-visitors, .obey .dog-left, .obey .gradient, .obey .coin, .obey hr, .obey .video-wrapper-inner p a,
+.obey .video-wrapper-inner p {
     display: none;
 }
 
@@ -724,7 +743,10 @@ display: none;
     .obey .byline {color:black; font-family: sans-serif;}
     .obey .blimp-wraper {display: none;}
     .obey .wrapper{border: dashed 15px white;}
-    .obey .underline{background: black; margin-bottom:10px;} 
+    .obey .underline{background: black; margin-bottom:10px; display: none;} 
+    .obey h2 {font-size: 38px;} 
+
+    .obey a, .obey address {font-family: sans-serif; font-size: 15px; font-weight: bold; font-style: normal;}
 
     @media only screen and (max-width: 1260px) {
         .balloon {
