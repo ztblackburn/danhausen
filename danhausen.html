@@ -538,8 +538,10 @@ display: none;
 .obey .media-wrapper{
     background-image: none;
     background:none;
+    padding: 0px;
 }
-
+.obey.video-wrapper-inner {padding:0;}
+.obey .video-wrapper {padding: 22px 0 0;}
 .obey .media-button-wrapper {
 
    display: none; 
@@ -731,14 +733,22 @@ display: none;
     .demon {width:20px; margin: 0 12px;}
 
     .obey .outer-wrapper{margin: 5% auto 0;}
-    .obey footer a {color: black;}
-    .obey footer h2 {color:black; font-size: 38px;margin-top: 50px;}
+    .obey footer a {color: black;display: inline-block;
+    width: auto;
+    margin: 0 20px;}
+    .obey .letter-icon {display: none;}
+    .obey footer h2 {color:black;}
     .obey .number-visitors span{color:white;}
     .obey .address-wrapper {
         background: white;
         color: black;
         font-family: sans-serif;
         font-weight: bold;
+    }
+
+    .obey .media-wrapper a{
+            color: black;
+            text-decoration: none;
     }
 
     .obey .lovethat {display: block;}
@@ -757,8 +767,9 @@ display: none;
     .obey .blimp-wraper {display: none;}
     .obey .wrapper{border: dashed 15px white;}
     .obey .underline{background: black; margin-bottom:10px; display: none;} 
-    .obey h2 {font-size: 38px;} 
-
+    .obey h2 {font-size: 38px; margin-top:180px;} 
+.obey a:hover .heart, .obey a:focus .heart{display: none;}
+.obey a:hover .skull, .obey a:focus .skull {display: none;}
     .obey a, .obey address {font-family: sans-serif; font-size: 15px; font-weight: bold; font-style: normal;}
 
     @media only screen and (max-width: 1260px) {
