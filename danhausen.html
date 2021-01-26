@@ -191,6 +191,7 @@
     <audio src="docs/loading-short.mp3" type="audio/mp3" autoplay></audio>
 </body>
 <style>
+        .social-wrapper-mobile {display: block; text-align: center;margin-top: 25px;}
     .download-arrow {
         background: #d8d8d8;
     display: inline-block;
@@ -203,8 +204,8 @@
         text-align: center;
     }
     .moneydog {max-width: 500px; float: right;}
-.twitter {border-radius: 15px;}
-.wood ul 
+    .twitter {border-radius: 15px;}
+    .wood ul 
     {
         border-radius: 10px;
         border: solid 2px;
@@ -214,11 +215,11 @@
         height: 150px;
         overflow-y: scroll;
     }
-.wood ul a {
-    
-    font-size: 22px;
-    line-height: 28px;
-}
+    .wood ul a {
+        
+        font-size: 22px;
+        line-height: 28px;
+    }
 
 
 /* width */
@@ -243,11 +244,11 @@ ul::-webkit-scrollbar-thumb:hover {
   background: lime; 
 }
 
-.social-wrapper-mobile {display: none;}
+
     
 .social-wrapper-desktop {
         justify-content: space-between;
-        display: flex;
+        display: none;
         margin-bottom: -45px;
     }
     .social-wrapper-desktop a, .social-wrapper-mobile a {
@@ -857,7 +858,7 @@ display: none;
 
 @media only screen and (max-width: 768px) {
     .social-wrapper-desktop {display: none;}
-    .social-wrapper-mobile {display: block; text-align: center;margin-top: 25px;}
+
     .social-wrapper-mobile a {padding:  0 20px;}
     .video-wrapper h3{
         font-size: 17px;
