@@ -1,0 +1,87 @@
+.obey .heart, .obey .skull, .obey .number-visitors, .obey .dog-left, .obey .gradient, .obey .coin, .obey hr, .obey .video-wrapper-inner p a,
+.obey .video-wrapper-inner p, .obey .obey-bookings, .obey .sent-text , .obey .video-wrapper h3, .obey .banner-wrapper, .obey .about,
+.obey .wood, .obey .byline,  .obey .media-button-wrapper{
+    display: none;
+}
+.obey .copyright {
+    color: black;
+    background: none;
+}
+
+.obey .copyright p {
+    margin: 0;
+}
+
+.obey footer{
+    padding: 0
+}
+
+.obey .video-wrapper-inner a{
+    font-size: 15px;
+}
+
+.obey .media-wrapper{
+    background-image: none;
+    background:none;
+    padding: 0px;
+}
+.obey.video-wrapper-inner {padding:0;}
+.obey .video-wrapper {padding: 22px 0 0; display: none;}
+
+
+.obey .video-wrapper-inner {
+        border:none;
+        background: none;
+}
+
+.obey .wrapper{border:dashed 15px white;}
+
+.obey .outer-wrapper{margin: 5% auto 5%;}
+.obey footer a {color: black;display: inline-block;
+width: auto;
+margin: 0 20px 50px;}
+.obey .letter-icon {display: none;}
+.obey footer h2 {color:black;}
+.obey .number-visitors span{color:white;}
+.obey .address-wrapper {
+    background: white;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.obey .media-wrapper a{
+        color: black;
+        text-decoration: none;
+}
+
+.obey .lovethat {display: block;}
+.obey h1 {margin-bottom:25px;color: black;}
+.obey h2 {color:black; text-transform: uppercase;}
+.obey h1, .obey h2 { font-family: sans-serif;}
+.obey .outer-wrapper{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    background: white !important;
+}
+
+.obey nav a{color:black;}
+.obey{background-color: #eaeaea;background-image:none !important ;}
+.obey .byline {color:black; font-family: sans-serif;}
+.obey .blimp-wraper {display: none;}
+.obey .wrapper{border: dashed 15px white;}
+.obey .underline{background: black; margin-bottom:10px; display: none;} 
+.obey h2 {font-size: 38px; margin-top:300px;} 
+.obey a:hover .heart, .obey a:focus .heart{display: none;}
+.obey a:hover .skull, .obey a:focus .skull {display: none;}
+.obey a, .obey address {font-family: sans-serif; font-size: 15px; font-weight: bold; font-style: normal;}
+
+@media only screen and (max-width: 1030px) {
+    .obey .wrapper{border:dashed 10px white;}
+}
+
+@media only screen and (max-width: 768px) { 
+    .obey h1 { font-size: 50px }
+    .obey h2 { font-size: 63px }
+    .obey .wrapper{border:dashed 5px white;}
+}
