@@ -19,8 +19,73 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <link rel="stylesheet" href="obey.css">
+                <style>
+            .obey .alert {
+                display: none;
+            }
+            .alert {
+                border-top: solid 2px white;
+                border-bottom: solid 2px #4b4b4b;
+                border-right: solid 2px rgb(51, 51, 51);
+                border-left: solid 2px rgb(231, 231, 231);
+                background: #d8d8d8;
+                padding: 5px;
+                width: 100%;
+                max-width: 700px;
+                margin: 0 auto;
+                top: 5px;
+                z-index:20;
+                left: 0;
+                z-index: 20;
+                right: 0;
+            }
+            .alert h3 {
+                padding: 5px;
+                margin: 0;
+                background: darkblue;
+                background: rgb(6,0,124);
+                background: linear-gradient(90deg, rgba(6,0,124,1) 46%, rgba(255,0,31,1) 100%);
+                font-family: sans-serif;
+                color: white;
+                letter-spacing: 1px;
+                font-size: 12px;
+            }
+            .alert span {
+                color: white;
+                padding: 0 10px;
+                font-family: sans-serif;    margin: 5px 0;
+                font-size: 12px;
+            }
+            .alert-text{
+                padding: 0 10px;
+                
+            }
+            .alert-text p {
+                color:black;
+                font-family: sans-serif;    margin: 5px 0;
+                font-size: 12px;
+            }
+            .alert-text a {
+                font-size: 12px;
+                font-family: sans-serif;    margin: 5px 0;
+            }
+
+            .alert + .banner-wrapper .banner {
+               height: 32px;
+            }
+            .alert + .banner-wrapper .banner .blimp-wraper {display: none;}
+        </style>
     </head>
     <body>
+        <div class="alert">
+            <div class="">
+                <h3 >Alerthausen!!!!!!!!!!</h3>
+            </div>
+            <div class="alert-text">
+                <p>Remember to go to your local comic shop and order the Danhausen Commanders in Crisis variant cover from Steve Orlando and Image Comics OR preorder online at Midtown Comics. Time is dwindling.</p>
+                <a href="https://www.midtowncomics.com/product/2011714">midtowncomics.com/product/2011714</a>
+            </div>
+        </div>
         <div class="banner-wrapper">
             <div class="banner">
                 <div class="blimp-wraper">
