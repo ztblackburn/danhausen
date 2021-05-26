@@ -1,6 +1,6 @@
 {
-  "name": "Akron Design and Development",
-  "short_name": "dandd",
+  "name": "Love That Danhausen",
+  "short_name": "lovethatdanhausen",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone",
